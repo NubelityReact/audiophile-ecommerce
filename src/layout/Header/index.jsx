@@ -1,9 +1,10 @@
 import React from "react"
 import { HeaderContainer, PictureStyled } from "./header.styles"
 
-const Header = () => {
+const Header = (props) => {
+  const { ...rest } = props
   return (
-    <HeaderContainer>
+    <HeaderContainer {...rest}>
       <PictureStyled>
         <img src="/assets/icons/burguer-icon.svg" alt="menu icon" />
       </PictureStyled>
